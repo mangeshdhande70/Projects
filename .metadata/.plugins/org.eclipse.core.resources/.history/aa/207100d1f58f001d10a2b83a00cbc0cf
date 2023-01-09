@@ -1,0 +1,53 @@
+package model;
+
+import com.mongodb.client.model.Collation;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.Arrays;
+
+
+@Document(collection = "employee")
+public class employee {
+
+
+    String empName;
+    Integer empId;
+    String Job_Profile;
+    String Unit;
+    String []Project;
+
+    public employee(){
+
+    }
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public Integer getEmpId() {
+        return empId;
+    }
+
+    public String getJob_Profile() {
+        return Job_Profile;
+    }
+
+    public String getUnit() {
+        return Unit;
+    }
+
+    public String[] getProject() {
+        return Project;
+    }
+
+    @Override
+    public String toString() {
+        return "employee{" +
+                "empName='" + empName + '\'' +
+                ", empId=" + empId +
+                ", Job_Profile='" + Job_Profile + '\'' +
+                ", Unit='" + Unit + '\'' +
+                ", Project=" + Arrays.toString(Project) +
+                '}';
+    }
+}

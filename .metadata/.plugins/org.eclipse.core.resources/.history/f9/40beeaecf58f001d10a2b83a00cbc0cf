@@ -1,0 +1,25 @@
+
+
+
+
+
+import model.employee;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
+
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+@RestController
+public class MyController {
+
+    
+    @GetMapping("/msg")
+    public String msg()
+    {
+    	return "hii";
+    }
+}

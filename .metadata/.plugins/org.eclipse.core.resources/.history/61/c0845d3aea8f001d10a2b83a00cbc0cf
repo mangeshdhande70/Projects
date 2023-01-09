@@ -1,0 +1,2 @@
+mongodb+srv://psudo7:10119800@mangesh.dfk8bwi.mongodb.net/?retryWrites=true&w=majority
+spring.data.mongodb.database = iNeuron
